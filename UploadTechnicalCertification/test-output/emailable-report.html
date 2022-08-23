@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">82,288</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="8">runner.RunnerClass</td><td><a href="#m0">runScenario</a></td><td rowspan="8">1660034772104</td><td rowspan="8">3207</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as admin and verify the declined technical record&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [3VITSC0701] but found [null]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefinition.ApproveAndVerifyCertificate.verify_whether_the_particular_certificate_is_present(ApproveAndVerifyCertificate.java:76)
+	at ✽.verify whether the particular certificate is present(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:54)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as admin and decline the technical record&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.Exception: The Project Participation Tradeviv is not uploaded or not present in the list
+	at pagefactory.AdminTechnicalRecordApproval.declineTechnicalRecord(AdminTechnicalRecordApproval.java:92)
+	at stepdefinition.ApproveAndVerifyCertificate.find_the_particular_certificate_and_click_decline_button(ApproveAndVerifyCertificate.java:66)
+	at ✽.find the particular certificate and click decline button(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:30)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as student with the given id &amp; phone number and upload certificate&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (8c3a29a3f3dcd58327bdb8c75feb8629)] -&gt; xpath: //*[text()=&apos;Co Curricular Achievements&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-PM10OF3&apos;, ip: &apos;192.168.1.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63537/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c3a29a3f3dcd58327bdb8c75feb8629
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.Utilities.waitForElementClickable(Utilities.java:25)
+	at pagefactory.StudentDashboard.clickcoCurricularAchivDropdown(StudentDashboard.java:28)
+	at stepdefinition.UploadCertificateTestClass.click_on_co_curricular_achievement_and_click_on_technical_record_button(UploadCertificateTestClass.java:30)
+	at ✽.click on co-curricular achievement and click on technical record button(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:7)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as admin and approve the technical record&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.Exception: The Project Participation Maplogik is not uploaded or not present in the list
+	at pagefactory.AdminTechnicalRecordApproval.approveTechnicalRecord(AdminTechnicalRecordApproval.java:80)
+	at stepdefinition.ApproveAndVerifyCertificate.find_the_particular_certificate_and_click_approve_button(ApproveAndVerifyCertificate.java:55)
+	at ✽.find the particular certificate and click approve button(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:22)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as admin and verify the pending technical record&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [3VITSC0701] but found [null]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefinition.ApproveAndVerifyCertificate.verify_whether_the_particular_certificate_is_present(ApproveAndVerifyCertificate.java:76)
+	at ✽.verify whether the particular certificate is present(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:38)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as admin and verify the approved technical record&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [3VITSC0701] but found [null]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefinition.ApproveAndVerifyCertificate.verify_whether_the_particular_certificate_is_present(ApproveAndVerifyCertificate.java:76)
+	at ✽.verify whether the particular certificate is present(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:46)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as student with the given id &amp; phone number and upload certificate&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (8c3a29a3f3dcd58327bdb8c75feb8629)] -&gt; xpath: //*[text()=&apos;Co Curricular Achievements&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-PM10OF3&apos;, ip: &apos;192.168.1.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63537/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c3a29a3f3dcd58327bdb8c75feb8629
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.Utilities.waitForElementClickable(Utilities.java:25)
+	at pagefactory.StudentDashboard.clickcoCurricularAchivDropdown(StudentDashboard.java:28)
+	at stepdefinition.UploadCertificateTestClass.click_on_co_curricular_achievement_and_click_on_technical_record_button(UploadCertificateTestClass.java:30)
+	at ✽.click on co-curricular achievement and click on technical record button(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:7)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runner.RunnerClass#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;login as student with the given id &amp; phone number and upload certificate&quot;</td><td>&quot;Login as student and upload three Technical certificates. Login into admin page and aprrove one certificate, decline one certificate.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (8c3a29a3f3dcd58327bdb8c75feb8629)] -&gt; xpath: //*[text()=&apos;Co Curricular Achievements&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-PM10OF3&apos;, ip: &apos;192.168.1.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63537/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c3a29a3f3dcd58327bdb8c75feb8629
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.Utilities.waitForElementClickable(Utilities.java:25)
+	at pagefactory.StudentDashboard.clickcoCurricularAchivDropdown(StudentDashboard.java:28)
+	at stepdefinition.UploadCertificateTestClass.click_on_co_curricular_achievement_and_click_on_technical_record_button(UploadCertificateTestClass.java:30)
+	at ✽.click on co-curricular achievement and click on technical record button(file:///C:/Users/Acer/Downloads/MaplogikCucumberScenarios-master/src/test/java/features/uploadCertificate.feature:7)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
